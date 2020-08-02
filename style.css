@@ -1,0 +1,55 @@
+/* font-family: 'IBM Plex Sans', sans-serif;
+font-family: 'Kanit', sans-serif; */
+
+body {
+  background-color: black;
+  color: white;
+}
+
+#hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#hero img {
+  width: 25%;
+}
+
+#hero .timer-description {
+  font-family: IBM Plex Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 47px;
+  /* identical to box height */
+
+  text-align: center;
+}
+
+#hero  h1 {
+  font-family: 'Kanit', sans-serif;
+  font-size: 72px;
+  line-height: 108px;
+}
+
+#hero .cop-killers {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+#hero p {
+  font-family: IBM Plex Sans;
+  font-size: 20px;
+  line-height: 36px;
+}
+
+#hero .killer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

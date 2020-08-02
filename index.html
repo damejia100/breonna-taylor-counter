@@ -3,11 +3,33 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Days Since Breonna Taylor was Murdered</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600&family=Kanit:wght@900&display=swap" rel="stylesheet">
 </head>
 <body>
-  <h1 id="timer"></h1>
-  <h2>Days since Breonna Taylor was murdered</h2>
+  <div id="hero">
+    <img src="assets/breonna-taylor.png">
+    <h1 id="timer"></h1>
+    <h2 class="timer-description">since Breonna Taylor was murdered by Louisville Metro Police officers:</h2>
+    <div class="cop-killers">
+      <div class="killer">
+        <img src="assets/jonathan-mattingly.png">
+        <p class="cop-name">Jonathan Mattingly</p>
+      </div>
+
+      <div class="killer">
+        <img src="assets/brett-hankison.png">
+        <p class="cop-name">Brett Hankison</p>
+      </div>
+
+      <div class="killer">
+        <img src="assets/myles-cosgrove.png">
+        <p class="cop-name">Myles Cosgrove  </p>
+      </div>
+
+    </div>
+  </div>
 </body>
 
 <script>
@@ -21,8 +43,8 @@
   let hours = Math.floor((timeBetween % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
   let minutes = Math.floor((timeBetween % (1000 * 60 * 60)) / (1000 * 60));
 
-  document.getElementById("timer").innerHTML = days + " days, " + hours + " hours, "
-  + minutes + ",minutes " ;
+  document.getElementById("timer").innerHTML = days + " DAYS, " + hours + " HOURS, & "
+  + minutes + " MINUTES " ;
 
 
 
