@@ -1,0 +1,22 @@
+{
+  "name": "breonna-taylor-timer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/damejia100/breonna-taylor-counter.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/damejia100/breonna-taylor-counter/issues"
+  },
+  "homepage": "https://github.com/damejia100/breonna-taylor-counter#readme",
+  "dependencies": {
+    "moment": "^2.27.0"
+  }
+}
