@@ -11,15 +11,18 @@
 </body>
 
 <script>
-  let murdered = new Date("March 13, 2020").getTime();
+  let deathDate = new Date("March 13, 2020 00:30:00").getTime();
 
   let now = new Date().getTime();
 
-  let timeBetween = now - murdered;
+  let timeBetween = now - deathDate;
 
-  var days = Math.floor(timeBetween / (1000 * 60 * 60 * 24));
+  let days = Math.floor(timeBetween / (1000 * 60 * 60 * 24));
+  let hours = Math.floor((timeBetween % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  let minutes = Math.floor((timeBetween % (1000 * 60 * 60)) / (1000 * 60));
 
-  console.log('timeBetween>>', days)
+  document.getElementById("timer").innerHTML = days + " days, " + hours + " hours, "
+  + minutes + ",minutes " ;
 
 
 
