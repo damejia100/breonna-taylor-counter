@@ -6,6 +6,7 @@
   <title>Days Since Breonna Taylor was Murdered</title>
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600&family=Kanit:wght@900&display=swap" rel="stylesheet">
+  <script type="text/javascript" async src="https://platform.twitter.com/widgets.js"></script>
 </head>
 <body>
   <!-- breonna picture, timer and timer description -->
@@ -46,14 +47,51 @@
   </div>
 
   <div class="actions">
-    <div class="petition-btn">
-      <button class="petition">Sign petition</button>
+
+    <div class="sign-petition">
+      <a
+      class="sign-petition-btn"
+      href="https://action.justiceforbreonna.org/sign/BreonnaWasEssential/?"
+      target="_blank"
+      alt="sign petition"
+      >
+      Sign Petition
+      </a>
+
+    </div>
+
+
     </div>
 
     <div class="share-btns">
-      <button class="share-site">Share site</button>
-      <button class="share-twitter">Share site</button>
-      <button class="share-facebook">Share site</button>
+      <!-- Share to twitter button -->
+      <div class='share-btn twitter'>
+        <a class="twitter-share-button"
+          href="https://twitter.com/intent/tweet?text=Days%20Since%20Breonna%20Taylor%20was%20murdered"
+          hashtags="#justiceforbreonnataylor"
+          target="_blank"
+          alt="share on Twitter"
+          >
+            Share site
+          <link rel="canonical"
+            href="http://www.dayssincebreonnataylorwasmurdered.com/">
+        </a>
+      </div>
+
+      <!-- Share to email button -->
+      <div class='share-btn email'>
+        <a href="mailto:?Subject=Help us demand justice for Breonna Taylor&amp;Body=Justice%20for%20Breonna%20Taylor http://www.dayssincebreonnataylorwasmurdered.com/">
+          <img src="https://simplesharebuttons.com/images/somacro/email.png" target="_blank" alt="share via email" />
+      </a>
+      </div>
+
+      <!-- Share to email button -->
+      <div class='share-btn facebook'>
+        <a href="https://www.facebook.com/sharer/sharer.php?u=http://www.dayssincebreonnataylorwasmurdered.com/" target="_blank" alt="share to Facebook">
+          Share on Facebook
+        </a>
+      </div>
+     </form>
     </div>
   </div>
 </body>
@@ -72,7 +110,9 @@
   document.getElementById("timer").innerHTML = days + " DAYS, " + hours + " HOURS, & "
   + minutes + " MINUTES " ;
 
-
+  function myFunction() {
+  location.replace("https://www.w3schools.com")
+}
 
 </script>
 </html>
