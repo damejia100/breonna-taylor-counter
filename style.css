@@ -7,17 +7,27 @@ body {
   padding: 0 100px;
 }
 
+h1 {
+  margin-bottom: 0;
+}
+
 h2 {
   font-size: 36px;
   font-family: IBM Plex Sans;
 }
 
-button {
+a {
+  text-decoration: none;
+}
+
+#btn {
   font-family: IBM Plex Sans;
-  background: #FFFFFF;
+  background-color: #FFFFFF;
+  color: #000000;
   border-radius: 115px;
   font-style: normal;
   font-weight: 600;
+  margin-bottom: 50px;
 }
 
 #hero, .body {
@@ -84,8 +94,16 @@ button {
   align-items: center;
 }
 
-.actions .petition-btn button {
-  width: 355px;
-  height: 60px;
+.actions .share-btns {
+  display: flex;
+  flex-direction: row;
+}
+
+.actions .sign-petition #btn {
   font-size: 24px;
+  padding: 12px 64px;
+}
+
+.sign-petition {
+  margin: 50px 0;
 }
