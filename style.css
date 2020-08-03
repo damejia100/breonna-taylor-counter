@@ -4,10 +4,12 @@ font-family: 'Kanit', sans-serif; */
 body {
   background-color: black;
   color: white;
-  padding: 0 100px;
+  padding: 80px 100px;
+  /* font-size: 100%; */
 }
 
 h1 {
+  font-size: 72px;
   margin-bottom: 0;
 }
 
@@ -18,6 +20,7 @@ h2 {
 
 a {
   text-decoration: none;
+  color: #fff;
 }
 
 #btn {
@@ -37,7 +40,7 @@ a {
 }
 
 #hero img {
-  width: 25%;
+  max-width: 400px;
 }
 
 #hero .timer-description {
@@ -71,6 +74,10 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.cop-killers .killer img {
+  height: 150px;
 }
 
 .description {
@@ -111,4 +118,20 @@ a {
 .actions .share-btns #btn {
   font-size: 20px;
   padding: 7px 48px;
+  margin: 0 16px;
+}
+
+.actions .share-btns .twitter #btn {
+  color: #1DA1F2;
+}
+
+.actions .share-btns .facebook #btn {
+  color: #4267B2;
+}
+
+.the-cut-credit, .dev-credits {
+  font-family: IBM Plex Sans;
+  text-align: center;
+  font-size: 16px;
+  line-height: 36px;
 }
