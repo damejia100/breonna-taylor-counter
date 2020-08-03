@@ -107,3 +107,8 @@ a {
 .sign-petition {
   margin: 50px 0;
 }
+
+.actions .share-btns #btn {
+  font-size: 20px;
+  padding: 7px 48px;
+}
