@@ -10,14 +10,18 @@ body {
 
 h1 {
   font-size: 72px;
+  font-family: 'Kanit', sans-serif;
+  line-height: 108px;
   margin-bottom: 0;
   white-space: pre-wrap;
   word-break: break-word;
+
 }
 
 h2 {
   font-size: 36px;
   font-family: IBM Plex Sans;
+  margin: 0;
 }
 
 a {
@@ -49,19 +53,14 @@ a {
   font-style: normal;
   font-weight: normal;
   line-height: 47px;
-}
-
-#hero  h1 {
-  font-family: 'Kanit', sans-serif;
-  font-size: 72px;
-  line-height: 108px;
+  margin: 0 0 80px 0;
 }
 
 .cop-killers {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
 }
 
@@ -76,6 +75,7 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 0 25px 25px 25px;
 }
 
 .cop-killers .killer img {
@@ -85,9 +85,11 @@ a {
 .description {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .description .the-cut-quote {
+  max-width: 750px;
   font-family: IBM Plex Sans;
   font-size: 20px;
   line-height: 36px;
@@ -95,6 +97,7 @@ a {
 
 .description h2 {
   text-align: center;
+  margin-top: 50px;
 }
 
 .actions {
@@ -117,7 +120,7 @@ a {
 }
 
 .sign-petition {
-  margin: 50px 0;
+  margin: 50px 0 100px 0
 }
 
 .actions .share-btns #btn {
@@ -151,4 +154,19 @@ a {
 
 .btn {
   height: 75px;
+}
+
+@media screen and (max-width: 700px) {
+  body {
+    padding: 80px 50px;
+  }
+  #hero h1 {
+    font-size: 50px;
+    line-height: 70px;
+  }
+  #hero .timer-description {
+    font-size: 28px;
+    margin: 20px 0 60px 0;
+  }
+
 }
