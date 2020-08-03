@@ -11,6 +11,8 @@ body {
 h1 {
   font-size: 72px;
   margin-bottom: 0;
+  white-space: pre-wrap;
+  word-break: break-word;
 }
 
 h2 {
@@ -104,6 +106,9 @@ a {
 .actions .share-btns {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+
 }
 
 .actions .sign-petition #btn {
@@ -134,4 +139,16 @@ a {
   text-align: center;
   font-size: 16px;
   line-height: 36px;
+}
+
+.the-cut-credit {
+  margin-top: 80px;
+}
+
+.dev-credits {
+  margin-top: 36px;
+}
+
+.btn {
+  height: 75px;
 }
