@@ -15,13 +15,14 @@ h1 {
   margin-bottom: 0;
   white-space: pre-wrap;
   word-break: break-word;
-
+  text-align: center;
 }
 
 h2 {
   font-size: 36px;
   font-family: IBM Plex Sans;
   margin: 0;
+  text-align: center;
 }
 
 a {
@@ -47,6 +48,8 @@ a {
 
 #hero img {
   max-width: 400px;
+  height: auto;
+  width: auto;
 }
 
 #hero .timer-description {
@@ -169,4 +172,10 @@ a {
     margin: 20px 0 60px 0;
   }
 
+}
+
+@media screen and (max-width: 400px) {
+  body {
+    padding: 50px 40px;
+  }
 }
