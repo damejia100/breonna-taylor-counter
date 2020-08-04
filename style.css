@@ -1,6 +1,5 @@
 /* font-family: 'IBM Plex Sans', sans-serif;
 font-family: 'Kanit', sans-serif; */
-
 body {
   background-color: black;
   color: white;
@@ -8,7 +7,7 @@ body {
   margin: 0px;
 }
 
-h1 {
+/* h1 {
   font-size: 72px;
   font-family: 'Kanit', sans-serif;
   line-height: 108px;
@@ -16,7 +15,7 @@ h1 {
   white-space: pre-wrap;
   word-break: break-word;
   text-align: center;
-}
+} */
 
 h2 {
   font-size: 36px;
@@ -52,6 +51,17 @@ a {
   max-width: 400px;
   height: auto;
   width: auto;
+}
+
+#timer .timeel {
+  font-size: 72px;
+  font-family: 'Kanit', sans-serif;
+  line-height: 108px;
+  margin-bottom: 0;
+  white-space: pre-wrap;
+  word-break: break-word;
+  text-align: center;
+  /* text-transform: uppercase; */
 }
 
 #hero .timer-description {

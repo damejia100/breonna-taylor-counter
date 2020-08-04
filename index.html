@@ -12,7 +12,18 @@
   <!-- breonna picture, timer and timer description -->
   <div id="hero">
     <img class="breonna" src="assets/breonna-taylor.jpg">
-    <h1 id="timer"></h1>
+    <!-- <h1 id="timer"></h1> -->
+    <div class="countup" id="timer">
+      <span class="timeel days">00</span>
+      <span class="timeel timeRefDays"> DAYS, </span>
+      <span class="timeel hours">00</span>
+      <span class="timeel timeRefHours"> HOURS, </span>
+      <span class="timeel minutes">00</span>
+      <span class="timeel timeRefMinutes"> MINUTES, </span>
+      <span class="timeel seconds">00</span>
+      <span class="timeel timeRefSeconds"> & SECONDS</span>
+    </div>
+
     <h2 class="timer-description">since Breonna Taylor was murdered by Louisville Metro Police officers:</h2>
   </div>
 
@@ -109,22 +120,48 @@
 </body>
 
 <script>
-  let deathDate = new Date("March 13, 2020 00:30:00").getTime();
 
-  let now = new Date().getTime();
+window.onload = function() {
+  countUpFromTime("March 13, 2020 00:30:00", 'timer');
+};
 
-  let timeBetween = now - deathDate;
+function countUpFromTime(countFrom, id) {
 
-  let days = Math.floor(timeBetween / (1000 * 60 * 60 * 24));
-  let hours = Math.floor((timeBetween % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  let minutes = Math.floor((timeBetween % (1000 * 60 * 60)) / (1000 * 60));
+  countFrom = new Date(countFrom).getTime();
+  let now = new Date();
+  countFrom = new Date(countFrom);
+  let timeDifference = (now - countFrom);
 
-  document.getElementById("timer").innerHTML = days + " DAYS, " + hours + " HOURS, & "
-  + minutes + " MINUTES" ;
+  let secondsInADay = 60 * 60 * 1000 * 24;
+  let secondsInAHour = 60 * 60 * 1000;
 
-  function myFunction() {
-  location.replace("https://www.w3schools.com")
+  let days = Math.floor(timeDifference / (secondsInADay) * 1);
+  let hours = Math.floor((timeDifference % (secondsInADay)) / (secondsInAHour) * 1);
+  let mins = Math.floor(((timeDifference % (secondsInADay)) % (secondsInAHour)) / (60 * 1000) * 1);
+  let secs = Math.floor((((timeDifference % (secondsInADay)) % (secondsInAHour)) % (60 * 1000)) / 1000 * 1);
+
+  let idEl = document.getElementById(id);
+  idEl.getElementsByClassName('days')[0].innerHTML = days;
+  idEl.getElementsByClassName('hours')[0].innerHTML = hours;
+  idEl.getElementsByClassName('minutes')[0].innerHTML = mins;
+  idEl.getElementsByClassName('seconds')[0].innerHTML = secs;
+
+  clearTimeout(countUpFromTime.interval);
+  countUpFromTime.interval = setTimeout(function(){ countUpFromTime(countFrom, id); }, 1000);
 }
+
+  // let deathDate = new Date("March 13, 2020 00:30:00").getTime();
+
+  // let now = new Date().getTime();
+
+  // let timeBetween = now - deathDate;
+
+  // let days = Math.floor(timeBetween / (1000 * 60 * 60 * 24));
+  // let hours = Math.floor((timeBetween % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  // let minutes = Math.floor((timeBetween % (1000 * 60 * 60)) / (1000 * 60));
+
+  // document.getElementById("timer").innerHTML = days + " DAYS, " + hours + " HOURS, & "
+  // + minutes + " MINUTES" ;
 
 </script>
 </html>
