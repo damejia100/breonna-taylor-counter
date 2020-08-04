@@ -53,16 +53,31 @@ a {
   width: auto;
 }
 
+#timer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 75%;
+  justify-content: center;
+}
+
 #timer .timeel {
-  font-size: 72px;
   font-family: 'Kanit', sans-serif;
-  line-height: 108px;
-  margin-bottom: 0;
   white-space: pre-wrap;
   word-break: break-word;
   text-align: center;
-  /* text-transform: uppercase; */
+  padding: 0 20px;
+
 }
+
+#timer .days, #timer .hours, #timer .minutes, #timer .seconds {
+  font-size: 72px;
+}
+
+#timer .timeRefDays, #timer .timeRefHours, #timer .timeRefMinutes, #timer .timeRefSeconds {
+  font-size: 36px;
+}
+
 
 #hero .timer-description {
   font-style: normal;
