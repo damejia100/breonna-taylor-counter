@@ -59,6 +59,7 @@ a {
   flex-wrap: nowrap;
   width: 100%;
   justify-content: center;
+  padding-top: 40px;
 }
 
 #timer .timeCounter {
@@ -193,7 +194,7 @@ a {
 
 @media screen and (max-width: 900px) {
   #timer .timeel {
-    padding: 0 12px;
+    padding: 0 8px;
   }
   #timer .timeUnit {
     font-size: 64px;
@@ -241,7 +242,7 @@ a {
     max-width: 300px;
   }
   #timer .timeUnit {
-    font-size: 22px;
+    font-size: 36px;
   }
   #timer .timeLabel {
     font-size: 12px;
