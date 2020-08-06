@@ -174,18 +174,18 @@ a {
   color: #4267B2;
 }
 
-.the-cut-credit, .dev-credits {
+.the-cut-credit, .dev-credits, .official-site {
   font-family: IBM Plex Sans;
   text-align: center;
   font-size: 16px;
   line-height: 36px;
 }
 
-.the-cut-credit {
+.official-site {
   margin-top: 80px;
 }
 
-.dev-credits {
+.dev-credits, .the-cut-credit {
   margin-top: 36px;
 }
 
