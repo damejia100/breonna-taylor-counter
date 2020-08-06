@@ -153,6 +153,7 @@ a {
 .actions .sign-petition #btn {
   font-size: 24px;
   padding: 12px 64px;
+  transition: transform .25s;
 }
 
 .sign-petition {

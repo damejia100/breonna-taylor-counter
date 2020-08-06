@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Days Since Breonna Taylor was Murdered</title>
+  <meta name=”description” content=”Days since Breonna Taylor was killed by “>
+  <title>Days Since Breonna Taylor was murdered by Louisville Metro Police officers Jonathan Mattingly, Brett Hankison, and Myles Cosgrove.</title>
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600&family=Kanit:wght@900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -54,7 +55,7 @@
 
     <div class="killer">
       <img src="assets/myles-cosgrove.png">
-      <p class="cop-name">Myles Cosgrove  </p>
+      <p class="cop-name">Myles Cosgrove</p>
     </div>
 
   </div>
@@ -127,7 +128,7 @@
   </div>
 
   <div class="dev-credits">
-    Designed by: <a href="http://beaversdesign.com/" target="_blank">Brian Beavers </a> | Developed by: <a href="http://devismejia.com/" target="_blank">Devis Mejia</a>
+    Designed by: <u><a href="http://beaversdesign.com/" target="_blank">Brian Beavers </a></u> | Developed by: <u><a href="http://devismejia.com/" target="_blank">Devis Mejia</a></u>
   </div>
 </body>
 
@@ -161,19 +162,6 @@ function countUpFromTime(countFrom, id) {
   clearTimeout(countUpFromTime.interval);
   countUpFromTime.interval = setTimeout(function(){ countUpFromTime(countFrom, id); }, 1000);
 }
-
-  // let deathDate = new Date("March 13, 2020 00:30:00").getTime();
-
-  // let now = new Date().getTime();
-
-  // let timeBetween = now - deathDate;
-
-  // let days = Math.floor(timeBetween / (1000 * 60 * 60 * 24));
-  // let hours = Math.floor((timeBetween % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  // let minutes = Math.floor((timeBetween % (1000 * 60 * 60)) / (1000 * 60));
-
-  // document.getElementById("timer").innerHTML = days + " DAYS, " + hours + " HOURS, & "
-  // + minutes + " MINUTES" ;
 
 </script>
 </html>
